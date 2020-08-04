@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+
+graphql:
+  servlet:
+    websocket:
+      enabled: false

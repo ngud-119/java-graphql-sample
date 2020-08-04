@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    url: jdbc:${DATABASE_URL:mysql://usr:User12345@localhost:3306/development}
+
+logging:
+  level:
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
