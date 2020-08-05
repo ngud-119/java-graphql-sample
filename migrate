@@ -1,5 +1,10 @@
 #!/bin/sh
 
-for i in {1..10}; do
-  java -jar target/java-graphql-sample-0.0.1-SNAPSHOT.jar migrations up && break || sleep 15
+if [ $# -eq 0 ]; then
+  echo "Usage: migrate [command] [command options]"
+  exit
+fi
+
+for i in {1..20}; do
+  java -jar target/java-graphql-sample-0.0.1-SNAPSHOT.jar migrations "$@" && break || sleep 15
 done

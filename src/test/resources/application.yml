@@ -6,3 +6,7 @@ graphql:
   servlet:
     websocket:
       enabled: false
+
+mybatis:
+  migrations:
+    enabled: false
