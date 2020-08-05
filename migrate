@@ -1,0 +1,5 @@
+#!/bin/sh
+
+for i in {1..10}; do
+  java -jar target/java-graphql-sample-0.0.1-SNAPSHOT.jar migrations up && break || sleep 15
+done
