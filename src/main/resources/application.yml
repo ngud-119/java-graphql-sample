@@ -1,6 +1,13 @@
 spring:
   datasource:
     url: jdbc:${DATABASE_URL:mysql://usr:User12345@localhost:3306/development}
+  jpa:
+    hibernate:
+      ddl-auto: none
+
+mybatis:
+  migrations:
+    enabled: true
 
 logging:
   level:
