@@ -17,3 +17,8 @@ A starter project that makes creating a deployable spring-boot code-first graphq
 ```bash
 docker run -d -e "MYSQL_ROOT_PASSWORD=Admin12345" -e "MYSQL_USER=usr" -e "MYSQL_PASSWORD=User12345" -e "MYSQL_DATABASE=development" -p 3306:3306 --name some-mysql bitnami/mysql:5.7.27
 ```
+## Migration
+```bash
+// ./mvnw package
+./migrate up/down
+```
